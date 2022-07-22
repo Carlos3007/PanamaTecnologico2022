@@ -1,0 +1,626 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    background-color: rgb(245, 245, 245);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: darkred;
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: darkred;
+}
+
+header a:hover{
+    color: black;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 70vh;
+    color: white;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url("media/fondo\ titulo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+#hero h1{
+    color: white;
+}
+
+#introduccion .container{
+    text-align: center;
+    padding: 50px 12px;
+}
+
+#roltics{
+    background-color: #3967ad;
+    color: white;
+    text-align: center;
+}
+
+#roltics .container{
+    padding: 50px 12px;
+}
+
+#roltic h2{
+    margin-top: 0%;
+}
+
+#roltics p{
+    display: none;
+}
+
+.roles:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/tribu elec.jpg");
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+
+}
+
+.roles:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/banca.jpg");
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+
+}
+
+.roles:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/educa.jpeg");
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+
+}
+
+#video .container{
+    text-align: center;
+    width: 90%;
+}
+
+#servicios{
+    background-color: #f7f3f3;
+    color: black;
+    text-align: center;
+}
+
+#servicios .container{
+    text-align: center;
+    padding: 50px 12px;
+}
+
+#capitulo2 {
+    background-color: rgb(57, 103, 173);
+    color: rgb(253, 253, 253);
+    text-align: center;
+}
+
+#capitulo2 .container{
+    text-align: center;
+    padding: 50px 12px;
+}
+
+#capitulo3 .container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+#capitulo3 .container .card{
+    background: #3967ad;
+    width: 90%;
+    height: 90%;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, rgba(0,0,0,0.5));
+}
+
+#capitulo3 .container .card > img{
+    width: 100px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    
+}
+
+#capitulo3 .container .card .texto{
+    width: 90%;
+    text-align: center;
+    color: #ccc;
+}
+
+.contenedor-te{
+    width: 90%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f3f3; 
+}
+
+h2{
+    text-align: center;
+}
+
+#historia .img-container >img{
+    width: 90%;
+    align-items: center;
+    padding-left: 30px;
+}
+
+#historia .texto{
+    text-align: center;
+}
+.container-g >img{
+    width: 90%;
+    padding-left: 30px;
+}
+
+.container-g1 >img{
+    width: 90%;
+    padding-left: 30px;
+}
+
+.texto-g{
+    text-align: center;
+}
+
+.texto-g1{
+    text-align: center;
+}
+
+.galeria-app{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.imagen-app{
+    width: 24%;
+    margin-bottom: 10px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,.5);
+}
+
+.imagen-app >img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-app{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(255, 20%, 24%, 0.671);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-app p{
+    color: #fff;
+}
+
+.imagen-app:hover .hover-app{
+    transform: scale(1);
+}
+
+footer{
+    background-color: rgb(230,230,230);
+}
+
+footer .container{
+    flex-direction: column;
+    border: none;
+}
+
+.container-f{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container-f h4{
+    border: none;
+}
+
+.container-f p{
+    border-bottom: 1px solid rgb(3, 3, 3);
+}
+
+.titulo-final{
+    font-size: 20px;
+    text-align: center;
+}
+
+@media (min-width:720px){
+    
+    header .container{
+      flex-direction: row;
+      justify-content: space-between;  
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #introduccion .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #introduccion .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #introduccion h2{
+        margin-top: 0px;
+    }
+
+    #introduccion .img-container{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("media/intro.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+    #roltics .roles1{
+        display: flex;
+        justify-content: center;
+    }
+
+    #roltics p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #roltics h3{
+        margin-top: 0;
+    }
+
+    #roltics .roles{
+       padding: 15px; 
+    }
+
+    #video .container{
+        justify-content: space-evenly;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    #servicios .container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #servicios .texto{
+        width: 50%;
+        max-width: 500px;
+        text-align: initial;
+        padding-left: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #servicios h3{
+        margin-top: 0px;
+    }
+
+    #servicios .img-container{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("media/e-admin.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+    #capitulo2 .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #capitulo2 .texto{
+        width: 50%;
+        max-width: 500px;
+        text-align: initial;
+        padding-left: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #capitulo2 h2{
+        margin-top: 0px;
+    }
+
+    #capitulo2 .img-container{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("media/cap2.jfif");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 800px;
+        width: 800px;
+    }
+
+    #capitulo3 .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    #capitulo3 .container .card{
+        display: flex;
+        width: 46%;
+        height: 400px;
+        align-items: center;
+        
+    }
+
+    #capitulo3 .container .card:first-child{
+        margin-bottom: none;
+    }
+
+    .contenedor-te{
+        width: 100%;
+    }
+
+    #historia .container{
+        background-color: #f7f3f3;
+        justify-content: space-evenly;
+    }
+
+    #historia .img-container > img{
+        width: 50%;
+        display: flex;
+        float: right;
+        align-items: center;
+        justify-content: center;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #historia .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #capitulo4 .container{
+        background-color: antiquewhite;
+        justify-content: space-evenly;
+    }
+    .container-galeria{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .container-g{
+        display: flex;
+        padding-bottom: 30px;
+        justify-content: space-evenly;
+    }
+
+    .container-g1{
+        background-color: #3967ad;
+        justify-content: space-evenly;
+        display: flexbox;
+    }
+
+    .container-g1 >img{
+        width: 49%;
+        float: right;
+        padding-bottom: 30px;
+        justify-content: space-evenly;
+    }
+
+    .container-g >img{
+        width: 49%;
+    }
+
+    .texto-g h3{
+        text-align: center;
+    }
+
+    .texto-g{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .galeria-app{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .imagen-app{
+        width: 24%;
+        margin-bottom: 10px;
+        height: 200px;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        box-shadow: 0 0 6px 0 rgba(0,0,0,.5);
+    }
+
+    .imagen-app >img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    
+    .hover-app{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        transform: scale(0);
+        background: hsla(255, 20%, 24%, 0.671);
+        transition: transform .5s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .hover-app p{
+        color: #fff;
+    }
+
+    .imagen-app:hover .hover-app{
+        transform: scale(1);
+    }
+
+    footer{
+        padding: 60px 5px 30px 0;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    footer .container{
+        display: flex;
+        width: 90%;
+        justify-content: space-evenly;
+        margin: auto;
+        padding-bottom: 5px;
+    }
+
+    .container-f{
+        text-align: center;
+    }
+
+    .container-f h4{
+        border-bottom: 3px solid rgb(0, 0, 0);
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+    }
+
+    .titulo-final{
+        font-size: 30px;
+    }
+
+}
